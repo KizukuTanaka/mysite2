@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% load static %} {% block contents %}
+  {% for notice in notices %}
+  <div class ="question">
+    <h1>「{{notice.title}}」～{{notice.category}}～</h1>
+    <h3>＜対象：{{notice.target}}＞</h3>
+    <h1>{{notice.content}}</h1>
+      {% if notice.url == none %} {% else %}
+      <h2><a href="{{notice.url}}">{{notice.url_name}}</a></h2>
+      {% endif %}
+    <br>
+    (投稿日時{{notice.posted_at}})
+  </div>
+  <hr color=blue>
+  {% endfor %} {% endblock contents %}
+</div>

@@ -1,0 +1,6 @@
+# mutool.exe 改変版
+
+[MuPDF](https://mupdf.com/)のSVG出力をちょっと改変したものです．[doraTeX/TeX2img Issue 64](https://github.com/doraTeX/TeX2img/issues/64)にある問題に対処しているつもりです．使い方についてはMuPDFのドキュメントをご覧ください．ライセンスはGNU Affero General Public License（AGPL）です．詳しくは[https://www.mupdf.com/license.html](https://www.mupdf.com/license.html)をご覧ください．
+改変版のソースは以下から入手できます．
+https://www.ms.u-tokyo.ac.jp/~abenori/soft/#MUTOOL
+

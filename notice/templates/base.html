@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+    <head>
+    <div class="header">
+        <meta charset ="utf-8">
+        <h1>数学授業運営サイト</h1>
+        <meta name="description" content = "数学のプリント、動画をまとめたサイトです。" >
+        <link rel = "stylesheet" href={% static 'css/toppage-style.css' %}>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="{% url 'toppage' %}">トップへ</a></li>
+                <li><a href="{% url 'notice' %}">お知らせへ</a></li>
+                <li><a href="#">単元トップへ</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    {% block contents %}
+        
+    {% endblock contents %}
+        
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-nav">
+                            <ul>
+                                <li><a href="{% url 'toppage' %}">トップへ</a></li>
+                                <li><a href="#">学年トップへ</li>
+                                <li><a href="#">単元トップへ</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">問題集</a></li>
+                                <li><a href="#">問題集解説</a></li>
+                                <li><a href="#">アンケート</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">質問・意見フォーム</a></li>
+                                <li><a href="{% url 'notice' %}">お知らせ</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </footer>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}  
+    <div class="topimage" align="center">
+        <img src={% static 'img/kesiki1.jpg' %} class="toppicture">
+    </div>
+    <div class="nakami">
+            <main>
+            <section>
+                <h2>利用方法</h2>  
+                <p>Youtubeでの授業動画をもとに対応する授業プリントを進める。</p>  
+            </section>
+            <section>
+                <h2>科目名・単元名</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>科目名</th>
+                            <th>単元名</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="hover-no" rowspan="4">数学Ⅰ</td>
+                            <td class="hover-yes"><a href="#">数と式</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">図形と計量</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">二次関数</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">データの分析</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-no" rowspan="5">数学Ⅱ</td>
+                            <td class="hover-yes"><a href="#">いろいろな式</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">図形と方程式</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="{% url 'sisuutaisuu' %}">指数関数・対数関数</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">三角関数</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">微分・積分の考え</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-no" rowspan="3">数学Ⅲ</td>
+                            <td class="hover-yes"><a href="#">極限</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">微分法</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">積分法</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-no" rowspan="3">数学A</A></td>
+                            <td class="hover-yes"><a href="#">図形の性質</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">場合の数と確率</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">数学と人間の活動</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-no" rowspan="3">数学B</A></td>
+                            <td class="hover-yes"><a href="#">数列</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">統計的な推測</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">数学と社会生活</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-no" rowspan="3">数学C</A></td>
+                            <td class="hover-yes"><a href="#">ベクトル</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">平面上の曲線と複素数平面</a></td>
+                        </tr>
+                        <tr>
+                            <td class="hover-yes"><a href="#">数学的な表現の工夫</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>  
+        </div>
+        </main>
+        {% endblock contents %}
+
+                
